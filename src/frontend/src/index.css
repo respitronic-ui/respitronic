@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    /* Primary blue #0B4F8A → oklch(0.36 0.13 252) */
+    --primary: 0.36 0.13 252;
+    --primary-foreground: 1 0 0;
+    /* Secondary #1C6FB0 */
+    --secondary: 0.48 0.13 252;
+    --secondary-foreground: 1 0 0;
+    /* Backgrounds */
+    --background: 1 0 0;
+    --foreground: 0.13 0 0;
+    --card: 1 0 0;
+    --card-foreground: 0.13 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.13 0 0;
+    /* Alt bg #F2F6F9 */
+    --muted: 0.97 0.015 245;
+    --muted-foreground: 0.45 0.02 252;
+    --accent: 0.97 0.015 245;
+    --accent-foreground: 0.36 0.13 252;
+    /* Border #D9E2EA */
+    --border: 0.88 0.02 242;
+    --input: 0.88 0.02 242;
+    --ring: 0.48 0.13 252;
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    /* Charts */
+    --chart-1: 0.36 0.13 252;
+    --chart-2: 0.48 0.13 252;
+    --chart-3: 0.6 0.1 200;
+    --chart-4: 0.7 0.12 160;
+    --chart-5: 0.5 0.15 280;
+    /* Sidebar */
+    --sidebar: 0.97 0.015 245;
+    --sidebar-foreground: 0.13 0 0;
+    --sidebar-primary: 0.36 0.13 252;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.93 0.02 245;
+    --sidebar-accent-foreground: 0.36 0.13 252;
+    --sidebar-border: 0.88 0.02 242;
+    --sidebar-ring: 0.48 0.13 252;
+    /* Custom */
+    --navy: 0.2 0.07 252;
+    --navy-foreground: 0.93 0.02 240;
+  }
+
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+}
